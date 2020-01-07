@@ -1,0 +1,11 @@
+install node
+install yarn
+
+yarn init
+yarn add @babel/cli
+yarn add @babel/preset-env
+yarn add @babel/core
+
+create file .babelrc
+
+add "scripts" on "package.json"
