@@ -1,20 +1,8 @@
-const arr = [1, 3 ,4, 5, 8, 9, 10];
-const result = arr.map(function (item, index) {
-    return item * index;
-});
+const arr = [1, 3 ,4, 5, 6];
+
+const result = arr.map(item => item * 2);
 console.log(result);
 
-const reduced = arr.reduce(function (total, next) {
-    return total + next;
-});
-console.log(reduced);
+const test = () => ({name: "Cristiano"});
 
-const filtered = arr.filter(function (item) {
-    return item % 2 === 0;
-});
-console.log(filtered);
-
-const find = arr.filter(function (item) {
-    return item === 2;
-});
-console.log(find);
+console.log(test());
