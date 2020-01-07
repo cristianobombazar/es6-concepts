@@ -1,8 +1,9 @@
-const arr = [1, 3 ,4, 5, 6];
+// function sum(a = 3, b = 6) {
+//     return a + b;
+// }
 
-const result = arr.map(item => item * 2);
-console.log(result);
 
-const test = () => ({name: "Cristiano"});
+const sum = (a = 3, b = 6) => a + b;
 
-console.log(test());
+console.log(sum(1));
+console.log(sum(2));
