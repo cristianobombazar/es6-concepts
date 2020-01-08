@@ -1,10 +1,2 @@
-const name = "Cristiano Bombazar";
-const age = 25;
-
-const user =  {
-    name,
-    age,
-    company: "DWF Sistemas"
-}
-
-console.log(user);
+import {sum} from './functions';
+console.log(sum(1, 3));

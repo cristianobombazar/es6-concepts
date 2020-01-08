@@ -13,3 +13,7 @@ add "scripts" on "package.json"
 add rest/spread ( example ...)
 yarn add @babel/plugin-proposal-object-rest-spread
 
+
+add webpack (wotk with multiple js files)
+yarn add webpack webpack-cli -D
+yarn add babel-loader -D
