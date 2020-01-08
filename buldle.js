@@ -2,5 +2,9 @@
 
 var name = "Cristiano Bombazar";
 var age = 25;
-console.log('My name is ' + name + " and i'm " + age + " old");
-console.log("My name is ".concat(name, " and i'm ").concat(age, " old"));
+var user = {
+  name: name,
+  age: age,
+  company: "DWF Sistemas"
+};
+console.log(user);
