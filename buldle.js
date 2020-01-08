@@ -1,13 +1,30 @@
 "use strict";
 
-// function sum(a = 3, b = 6) {
-//     return a + b;
-// }
-var sum = function sum() {
-  var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 3;
-  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 6;
-  return a + b;
+var user = {
+  name: 'Cristiano Bombazar',
+  age: 25,
+  address: {
+    city: 'Braço do Norte',
+    state: 'Santa Catarina'
+  }
 };
+var name = user.name,
+    age = user.age,
+    city = user.address.city;
+console.log(name);
+console.log(age);
+console.log(city);
 
-console.log(sum(1));
-console.log(sum(2));
+function showName(user) {
+  console.log(user.name);
+}
+
+function showNameAsParameter(_ref) {
+  var name = _ref.name,
+      age = _ref.age;
+  console.log(name);
+  console.log(age);
+}
+
+showName(user);
+showNameAsParameter(user);
