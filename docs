@@ -27,3 +27,7 @@ yarn dev (start server)
 // async/await
 yarn add @babel/plugin-transform-async-to-generator -D
 yarn add @babel/polyfill -D
+
+
+// add axios todo do backend requests
+yarn add axios
