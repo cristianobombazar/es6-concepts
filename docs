@@ -17,3 +17,6 @@ yarn add @babel/plugin-proposal-object-rest-spread
 add webpack (wotk with multiple js files)
 yarn add webpack webpack-cli -D
 yarn add babel-loader -D
+
+// live reload
+yarn add webpack-dev-server -D
