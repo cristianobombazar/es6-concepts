@@ -1,25 +1,45 @@
+//REST OPERATOR
+
 const user = {
-    name: 'Cristiano Bombazar',
-    age: 25,
-    address: {
-        city: 'Braço do Norte',
-        state: 'Santa Catarina'
-    }
+    name: "Cristiano Bombazar",
+    age: 23,
+    company: 'DWF Sistemas'
 };
 
-const {name, age, address: {city}} = user;
+const {name, ...rest} = user;
 console.log(name);
-console.log(age);
-console.log(city);
+console.log(rest);
 
-function showName(user) {
-    console.log(user.name);
+const arr = [1, 2, 3, 4];
+const [a, b, ...c] = arr;
+console.log(a);
+console.log(b);
+console.log(c);
+
+function sum(...params) {
+    return params.reduce((total, next) => total + next);
 }
 
-function showNameAsParameter({name, age}) {
-    console.log(name);
-    console.log(age);
+function sum2(a, b, ...params) {
+    return params;
 }
 
-showName(user);
-showNameAsParameter(user);
+console.log(sum(1, 3, 4))
+console.log(sum2(1, 3, 4))
+
+
+// SPREAD OPERATOR
+
+const spreadArr = [1, 2, 3];
+const spreadArr2 = [4, 5, 6];
+const spreadArr3 = [...spreadArr, ...spreadArr2];
+console.log(spreadArr3);
+
+const user2 = {
+    name: 'Cristiano Bombazar',
+    age: 25
+};
+console.log(user2);
+
+const newUser = {...user2, name: 'Nicolas'};
+console.log(newUser);

@@ -9,3 +9,7 @@ yarn add @babel/core
 create file .babelrc
 
 add "scripts" on "package.json"
+
+add rest/spread ( example ...)
+yarn add @babel/plugin-proposal-object-rest-spread
+
