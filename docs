@@ -20,3 +20,10 @@ yarn add babel-loader -D
 
 // live reload
 yarn add webpack-dev-server -D
+
+yarn dev (start server)
+
+
+// async/await
+yarn add @babel/plugin-transform-async-to-generator -D
+yarn add @babel/polyfill -D

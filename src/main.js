@@ -1,8 +1,28 @@
-import classUser from './functions';
-import {age} from './functions';
-import classUser2, {age as age2} from './functions';
+const myPromise = () => new Promise( ((resolve, reject) => {
+    setTimeout(() => {
+        resolve("ok");
+    }, 2000);
+}));
 
-classUser.info();
-alert(age)
-classUser2.info();
-alert(age2)
+// old
+myPromise().then(value => {
+    console.log(value);
+}).catch(reason => {
+    console.log(reason);
+})
+
+//new
+async function executePromise() {
+    const response = await myPromise();
+    console.log(response);
+}
+
+executePromise();
+
+
+const executePromisseArrowFunction = async () =>{
+    const response = await myPromise();
+    console.log(response);
+};
+
+executePromisseArrowFunction();
